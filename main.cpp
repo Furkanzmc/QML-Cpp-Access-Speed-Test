@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     SingletonTest st;
     engine.rootContext()->setContextProperty("st", &st);
 
-    engine.load(QUrl(QStringLiteral("/Users/Furkanzmc/Development/Playground/QMLPlayground/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
 
